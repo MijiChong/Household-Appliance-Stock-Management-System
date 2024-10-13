@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addMicrowaveController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="65.0" layoutY="14.0" text="Add new microwave">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="57.0" text="Product Name : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <TextField fx:id="tfName" layoutX="154.0" layoutY="53.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter product name..." />
+            <TextField fx:id="tfWidth" layoutX="154.0" layoutY="83.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter width..." />
+            <TextField fx:id="tfHeight" layoutX="154.0" layoutY="114.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter height..." />
+            <TextField fx:id="tfLength" layoutX="154.0" layoutY="145.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter length..." />
+            <TextField fx:id="tfQty" layoutX="154.0" layoutY="175.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter quantity..." />
+            <Label layoutX="57.0" layoutY="87.0" text="Width (cm) : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <Label layoutX="51.0" layoutY="118.0" text="Height (cm) :">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <Label layoutX="48.0" layoutY="149.0" text="Length (cm) : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <Label layoutX="72.0" layoutY="181.0" text="Quantity : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="211.0" text="Price (RM) : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <Label layoutX="47.0" layoutY="301.0" text="Item Number: ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font></Label>
+            <TextField fx:id="tfPrice" layoutX="154.0" layoutY="205.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter price..." />
+            <TextField fx:id="tfItemNo" layoutX="154.0" layoutY="297.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter itemNo..." />
+            <Button fx:id="btExit" layoutX="524.0" layoutY="349.0" mnemonicParsing="false" onAction="#exit" prefHeight="37.0" prefWidth="62.0" text="Exit">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button fx:id="btAddMicrowave" defaultButton="true" layoutX="187.0" layoutY="352.0" mnemonicParsing="false" onAction="#addMicrowave" prefHeight="19.0" prefWidth="141.0" text="Add microwave">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button fx:id="backToMenu" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" onAction="#switchToMenuScene" prefHeight="32.0" prefWidth="141.0" text="Back to menu">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font></Button>
+            <Button layoutX="444.0" layoutY="12.0" mnemonicParsing="false" onAction="#switchToAddProductScene" prefHeight="32.0" prefWidth="141.0" text="Add another product" />
+            <Label fx:id="labelName" layoutX="345.0" layoutY="53.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelWidth" layoutX="345.0" layoutY="83.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelHeight" layoutX="345.0" layoutY="114.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelLength" layoutX="345.0" layoutY="145.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelItemNo" layoutX="345.0" layoutY="297.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelQty" layoutX="345.0" layoutY="175.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelPrice" layoutX="345.0" layoutY="205.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label layoutX="22.0" layoutY="274.0" text="Warranty (years):">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="241.0" text="Feature : ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfFeature" layoutX="154.0" layoutY="236.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter Feature..." />
+            <TextField fx:id="tfWarranty" layoutX="155.0" layoutY="267.0" prefHeight="27.0" prefWidth="175.0" promptText="Enter warranty..." />
+            <Label fx:id="tfSuccess" layoutX="339.0" layoutY="358.0" prefHeight="19.0" prefWidth="175.0" textFill="#039d39" />
+            <Label fx:id="labelFeature" layoutX="345.0" layoutY="236.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+            <Label fx:id="labelWarranty" layoutX="345.0" layoutY="270.0" prefHeight="27.0" prefWidth="250.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

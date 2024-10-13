@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.exitSceneController">
+   <children>
+      <Button fx:id="btClose" layoutX="263.0" layoutY="339.0" mnemonicParsing="false" onAction="#exit" prefHeight="46.0" prefWidth="74.0" text="Close">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="18.0" />
+         </font></Button>
+      <Label fx:id="nameLabel" layoutX="141.0" layoutY="156.0" prefHeight="35.0" prefWidth="419.0">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="24.0" />
+         </font></Label>
+      <Label fx:id="idLabel" layoutX="141.0" layoutY="220.0" prefHeight="35.0" prefWidth="439.0">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="24.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="42.0" text="The End" textFill="#3dadea">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="95.0" text="Thanks for using. Have a nice day!" textFill="#3dadea">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addStockController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="100.0" layoutY="92.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="mylist" editable="true" layoutX="-31.0" layoutY="-16.0" prefHeight="287.0" prefWidth="182.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Separator layoutY="194.0" prefHeight="3.2" prefWidth="417.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="194.0" />
+                  <TextField fx:id="tfNumber1" layoutX="87.0" layoutY="233.0" prefHeight="30.0" prefWidth="182.0" promptText="units" />
+                  <Label layoutX="82.0" layoutY="203.0" text="Enter the quantity to add">
+                     <font>
+                        <Font name="Georgia Pro Cond Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="135.0" orientation="VERTICAL" prefHeight="195.0" prefWidth="10.0" />
+                  <VBox layoutY="2.0" prefHeight="192.0">
+                     <children>
+                        <Label fx:id="L1" prefHeight="48.0" prefWidth="138.0" text="  Item Number :" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L2" prefHeight="48.0" prefWidth="138.0" text="  Product Name :" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L3" prefHeight="48.0" prefWidth="138.0" text="  Price :">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L4" prefHeight="48.0" prefWidth="138.0" text="  Quantity :">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="145.0" layoutY="2.0" prefHeight="192.0" prefWidth="260.0">
+                     <children>
+                        <Label fx:id="L5" prefHeight="48.0" prefWidth="260.0">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L6" prefHeight="48.0" prefWidth="260.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L7" prefHeight="48.0" prefWidth="260.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="L8" prefHeight="48.0" prefWidth="260.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Georgia Pro Cond Light" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="lblText" layoutX="3.0" layoutY="264.0" prefHeight="20.0" prefWidth="416.0" textFill="#2adc1a">
+                     <font>
+                        <Font name="Georgia Pro Cond Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btConfirm" layoutX="304.0" layoutY="232.0" mnemonicParsing="false" onAction="#addQty" prefHeight="30.0" prefWidth="88.0" text="CONFIRM">
+                     <font>
+                        <Font name="Georgia Pro Cond Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblText2" layoutX="63.0" layoutY="264.0" prefHeight="20.0" prefWidth="230.0" textAlignment="CENTER" textFill="#c71515">
+                     <font>
+                        <Font name="Georgia Pro Cond Light" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Separator layoutX="300.0" layoutY="339.0" orientation="VERTICAL" prefHeight="59.0" prefWidth="9.0" />
+      <Button fx:id="btBack" layoutX="1.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchToMenuScene" prefHeight="59.0" prefWidth="294.0" text="BACK">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="24.0" />
+         </font></Button>
+      <Button fx:id="btExit" layoutX="300.0" layoutY="339.0" mnemonicParsing="false" onAction="#exit" prefHeight="59.0" prefWidth="294.0" text="EXIT">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="24.0" />
+         </font></Button>
+      <Label layoutX="221.0" layoutY="14.0" text="ADD STOCK">
+         <font>
+            <Font name="Georgia Pro Cond Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="26.0" text="Select a Product">
+         <font>
+            <Font name="Georgia Pro Light Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
